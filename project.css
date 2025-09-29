@@ -1,65 +1,97 @@
+  body {
+      margin: 0;
+      padding: 50px;
+      font-family: "Poppins", sans-serif;
+      background-color: #f3f3f3;
+      display: flex;
+      justify-content: center;
+    }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin: 50px;
-}
+    .container {
+      display: flex;
+      gap: 30px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-.card {
-  width: 300px;
-  height: 400px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
-  overflow: hidden;
-  background-color: #fff;
-  text-align: center;
-  position: relative;
-}
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      width: 280px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      text-align: center;
 
-.img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
+    }
 
+    .card-header {
+      background-color: #8c3dff;
+      height: 120px;
+      position: relative;
+    }
 
-.icon {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  color: white;
-  font-size: 20px;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 6px;
-  border-radius: 50%;
-}
-.details {
-  padding: 10px;
-}
+    .social-icons {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
 
-.details h1 {
-  font-size: 22px;
-  margin: 10px 0 5px;
-}
+    .social-icons i {
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    .profile-img {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      border: 4px solid white;
+      position: absolute;
+      left: 50%;
+      bottom: -55px;
+      transform: translateX(-50%);
+      object-fit: cover;
+    }
 
-.details p {
-  color: gray;
-  margin-bottom: 15px;
-}
+    .details {
+      margin-top: 70px;
+      padding: 10px 20px 20px;
+    }
 
-.btn {
-  background-color: #302d2d;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 8px 20px;
-  margin: 5px;
-  cursor: pointer;
-}
+    .details h1 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
 
-.btn:hover {
-  background-color: #555;
-}
+    .details p {
+      font-size: 14px;
+      color: gray;
+      margin: 0 0 10px;
+    }
+
+    .stars i {
+      color: #8c3dff;
+      margin: 0 2px;
+    }
+
+    .btn-container {
+      margin-top: 15px;
+    }
+
+    .btn {
+      background-color: #8c3dff;
+      color: white;
+      border: none;
+      border-radius: 50px;
+      padding: 8px 20px;
+      margin: 5px;
+      font-weight: 500;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
